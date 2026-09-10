@@ -1,3 +1,31 @@
+html{
+    background-color: rgb(146, 177, 157);
+}
+
+
 h1{
     text-align: center;
+}
+
+
+.container{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+    gap:20px;
+    padding-bottom: 30px;
+}
+
+img{
+    width: 50vw;
+    transition-duration: 0.4s;
+    border:5px black solid;
+}
+
+img:hover{
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.4;
 }
