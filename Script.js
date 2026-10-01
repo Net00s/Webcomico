@@ -1,7 +1,7 @@
 addEventListener("DOMContentLoaded", function(){
     const panels = document.getElementsByClassName("panel")
     
-    for (panel of panels){
+    for (const panel of panels){
         panel.onclick = () => zoom(panel.src)
     }
 
