@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Webcomic</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="zoomin" id="zoomin" onclick="this.style.visibility = 'hidden'">
+            <img src="images/placeholder.jpg" style="position:fixed;" id="ZoomedImage">
+        </div>
+
+        <div id="topBar"> <!-- IMPORTANT-->
+            <a style="color:white" href="index.html">Home</a>
+            <a style="color:white" href="Page.html">Comic</a>
+            <a style="color:white" href="Extra.html">Extra</a>
+            <div style="width:40px">____</div>
+        </div>
+
+        <div style="display:grid; margin-bottom: 10px; grid-template-columns: auto auto auto; justify-content: center;">
+            <button style="width:30px" onclick="document.getElementById('pageSelect').value = Number(document.getElementById('pageSelect').value) - 1"><</button>
+            <select name="pageSelect" id="pageSelect">
+                <option value="1">page 1</option>
+                <option value="2">page 2</option>
+            </select>
+            <button style="width:30px" onclick="document.getElementById('pageSelect').value = Number(document.getElementById('pageSelect').value) + 1">></button>
+        </div>
+
+        <div class="container">
+            <img src="images/placeholder.jpg" class="panel">
+            <img src="images/placeholder1.jpg" class="panel">
+            <img src="images/placeholder2.jpg" class="panel">
+        </div>
+
+        <div id="pageNumber">1</div>
+
+    <script src="Script.js"></script>
+    </body>
+</html>
