@@ -1,7 +1,12 @@
 html{
     background-color: rgb(146, 177, 157);
+    padding:0;
+    margin:0;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 h1{
     text-align: center;
@@ -19,7 +24,7 @@ h1{
     padding-bottom: 30px;
 }
 
-img{
+img:not(#ZoomedImage){
     width: 50vw;
     transition-duration: 0.4s;
     border:5px black solid;
@@ -28,4 +33,25 @@ img{
 img:hover{
     box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
     transition-duration: 0.4;
+}
+
+.zoomin{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+
+}
+
+.zoomin img{
+    height:95%;
+    width:auto;
 }
