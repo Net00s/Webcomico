@@ -18,21 +18,19 @@
         </div>
 
         <div style="display:grid; margin-bottom: 10px; grid-template-columns: auto auto auto; justify-content: center;">
-            <button style="width:30px" onclick="document.getElementById('pageSelect').value = Number(document.getElementById('pageSelect').value) - 1"><</button>
+            <button style="width:30px" onclick="updateNumberMinus();createPanels();"><</button>
             <select name="pageSelect" id="pageSelect">
                 <option value="1">page 1</option>
                 <option value="2">page 2</option>
+                <option value="3">page 3</option>
             </select>
-            <button style="width:30px" onclick="document.getElementById('pageSelect').value = Number(document.getElementById('pageSelect').value) + 1">></button>
+            <button style="width:30px" onclick="updateNumberPlus();createPanels();">></button>
         </div>
 
-        <div class="container">
-            <img src="images/placeholder.jpg" class="panel">
-            <img src="images/placeholder1.jpg" class="panel">
-            <img src="images/placeholder2.jpg" class="panel">
+        <div class="container" id="container">
+
         </div>
 
-        <div id="pageNumber">1</div>
 
     <script src="Script.js"></script>
     </body>
