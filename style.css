@@ -1,11 +1,16 @@
 html{
-    background-image: linear-gradient(lightblue,rgb(132, 132, 255)) ;
-    padding:0;
+    background-image: linear-gradient(rgb(60, 125, 204),lightblue) ;
+    padding-top:30px;
     margin:0;
-    margin-top:30px;
+    margin-top:0px;
     min-height:100vh;
 }
 
+/* html:has(#topBar:hover){
+    
+    transition-duration: 1s;
+}
+*/
 *{
     box-sizing: border-box;
 }
@@ -26,7 +31,7 @@ h1{
     padding-bottom: 30px;
 }
 
-img:not(#ZoomedImage){
+.container img:not(#ZoomedImage){
     width: 50vw;
 }
 
@@ -77,7 +82,7 @@ img:not(#ZoomedImage){
     height:75px;
     align-items: end;
     transition-duration: 0.4s;
-    background-color: rgb(34, 36, 74);
+    background-color: rgb(48, 50, 94);
 }
 
 #topBar:hover div{
@@ -147,4 +152,29 @@ select:hover{
     grid-template-columns: 3% 10% 3%;
     justify-content: center;
     height:30px
+}
+
+.extraContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    width:100%;
+    gap:5px
+}
+
+.extraContainer img{
+    width:100%;
+    transition-duration: 0.4s;
+        border:1px white solid
+}
+
+.extraContainer img:hover{
+    transition-duration: 0.4s;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-10px, -10px);
+
+}
+
+p{
+    text-align: center;
 }
