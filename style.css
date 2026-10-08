@@ -28,14 +28,9 @@ h1{
 
 img:not(#ZoomedImage){
     width: 50vw;
-    transition-duration: 0.4s;
-    border:5px black solid;
 }
 
-img:hover{
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
-    transition-duration: 0.4;
-}
+
 
 .zoomin{
     display:grid;
@@ -67,12 +62,14 @@ img:hover{
     top:0;
     left:0;
     background-color: rgb(69, 73, 133);
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     justify-items: center;
     align-items: end;
     grid-template-columns: auto auto auto;
     border-bottom: black 2px solid;
     border-radius: 0 0 10px 10px;
+    animation: show 0.75s;
+    z-index: 99;
 }
 
 #topBar:hover{
@@ -80,6 +77,7 @@ img:hover{
     height:75px;
     align-items: end;
     transition-duration: 0.4s;
+    background-color: rgb(34, 36, 74);
 }
 
 #topBar:hover div{
@@ -106,4 +104,47 @@ img:hover{
     bottom:0;
     left:0;
     position:fixed
+}
+
+@keyframes show{
+    0% {height:30px}
+    50% {height:40px}
+    100% {height:30px}
+}
+
+#backButton:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.4;
+}
+
+#forwardButton:hover{
+    transform: translate(3px, -3px);
+    box-shadow: -3px 3px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.4;
+}
+
+button{
+    transition-duration: 0.4s;
+
+}
+
+select{
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+select:hover{
+    transform: translate(0px, -3px);
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.4;
+}
+
+#buttonContainer{
+    display:grid; 
+    margin-bottom: 5px;
+    margin-top: 60px; 
+    grid-template-columns: 3% 10% 3%;
+    justify-content: center;
+    height:30px
 }

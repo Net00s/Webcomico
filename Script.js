@@ -43,6 +43,7 @@ function createPanels(){
     {
         1: 3,
         2: 1,
+        3: 0
     }
     
     document.querySelectorAll(".Panel").forEach(panel => panel.remove())

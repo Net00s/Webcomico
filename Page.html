@@ -17,14 +17,14 @@
             <div style="width:40px">____</div>
         </div>
 
-        <div style="display:grid; margin-bottom: 10px; grid-template-columns: auto auto auto; justify-content: center;">
-            <button style="width:30px" onclick="updateNumberMinus();createPanels();"><</button>
+        <div id="buttonContainer">
+            <button id="backButton" onclick="updateNumberMinus();createPanels();"><</button>
             <select name="pageSelect" id="pageSelect">
                 <option value="1">page 1</option>
                 <option value="2">page 2</option>
                 <option value="3">page 3</option>
             </select>
-            <button style="width:30px" onclick="updateNumberPlus();createPanels();">></button>
+            <button id="forwardButton" onclick="updateNumberPlus();createPanels();">></button>
         </div>
 
         <div class="container" id="container">
