@@ -1,5 +1,5 @@
 html{
-    background-image: linear-gradient(rgb(60, 125, 204),lightblue) ;
+    background-image: url(images/Website/noise.png), linear-gradient(rgb(36, 113, 206),rgb(98, 188, 218)) ;
     padding-top:30px;
     margin:0;
     margin-top:0px;
@@ -29,6 +29,19 @@ h1{
     place-items: center;
     gap:20px;
     padding-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    width:52vw;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    border-radius: 1px;
+    border:5px rgb(113, 113, 113) solid
+
+}
+
+.biggerContainer{
+    align-items: center;
+    align-content: center;
+    place-items: center;
 }
 
 .container img:not(#ZoomedImage){
