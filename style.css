@@ -29,7 +29,8 @@ h1{
     place-items: center;
     gap:20px;
     padding-bottom: 30px;
-    background-color: rgb(255, 255, 255);
+    background-image: url(images/Website/Warn.png);
+    background-size: 50%;
     width:52vw;
     padding-top:2vh;
     padding-bottom:2vh;
@@ -46,6 +47,7 @@ h1{
 
 .container img:not(#ZoomedImage){
     width: 50vw;
+    border: black 1px solid;
 }
 
 
