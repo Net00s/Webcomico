@@ -81,15 +81,15 @@ h1{
     position:fixed;
     top:0;
     left:0;
-    background-color: rgb(69, 73, 133);
+    background-color: rgba(0, 0, 0, 0.2);
     transition-duration: 0.4s;
     justify-items: center;
     align-items: end;
     grid-template-columns: auto auto auto;
-    border-bottom: black 2px solid;
-    border-radius: 0 0 10px 10px;
+    border-bottom: rgb(0, 0, 0) 2px solid;
     animation: show 0.75s;
     z-index: 99;
+    backdrop-filter: blur(8px);
 }
 
 #topBar:hover{
@@ -97,7 +97,8 @@ h1{
     height:75px;
     align-items: end;
     transition-duration: 0.4s;
-    background-color: rgb(48, 50, 94);
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 #topBar:hover div{
@@ -112,12 +113,20 @@ h1{
 #topBar a{
     opacity:0;
     transition-duration: 0.2;
+    color:rgb(0, 0, 41);
+    font-family: sciency;
+    font-size: xx-large;
+    text-decoration: none;
 }
 
 #topBar:hover a{
     align-self: center;
     opacity:1;
     transition-duration: 0.4s;
+}
+
+#topBar:hover a:hover{
+    text-decoration: underline;
 }
 
 #pageNumber{
@@ -152,6 +161,7 @@ button{
 select{
     transition-duration: 0.4s;
     text-align: center;
+    font-family: sciency;
 }
 
 select:hover{
@@ -192,4 +202,9 @@ select:hover{
 
 p{
     text-align: center;
+}
+
+@font-face {
+  font-family: Sciency; /* set name */
+  src: url(Fonts/Bombardier-0jP.ttf); /* url of the font */
 }

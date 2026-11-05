@@ -1,0 +1,2 @@
+Change the main background from noise to something more symmetric or calculated + darker
+- checkerboard?
